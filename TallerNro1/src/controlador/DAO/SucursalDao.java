@@ -10,7 +10,7 @@ import modelo.Venta;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class SucursalDao extends AdaptadorDao<Sucursal>{
     private Sucursal sucursal;

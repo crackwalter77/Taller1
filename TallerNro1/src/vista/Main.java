@@ -15,7 +15,7 @@ import modelo.Sucursal;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class Main {
 

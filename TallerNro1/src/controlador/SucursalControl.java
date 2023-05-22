@@ -11,7 +11,7 @@ import modelo.Venta;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class SucursalControl {
     

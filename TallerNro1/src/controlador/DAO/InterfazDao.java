@@ -8,7 +8,7 @@ import java.io.IOException;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public interface InterfazDao<T>{
     

@@ -9,7 +9,7 @@ import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class Conexion {
     private XStream xstream;

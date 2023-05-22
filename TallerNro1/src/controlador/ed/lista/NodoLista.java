@@ -6,7 +6,7 @@ package controlador.ed.lista;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class NodoLista<E> {
     private E info; //dato generico

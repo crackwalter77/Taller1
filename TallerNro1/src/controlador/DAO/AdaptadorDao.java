@@ -12,7 +12,7 @@ import java.lang.reflect.Array;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class AdaptadorDao <T> implements InterfazDao<T>{
     

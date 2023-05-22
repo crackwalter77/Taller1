@@ -9,7 +9,7 @@ import controlador.ed.lista.exception.VacioException;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class ListaEnlazada <E>{
     private NodoLista<E> cabecera;

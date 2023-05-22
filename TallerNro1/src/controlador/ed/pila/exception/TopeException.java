@@ -6,7 +6,7 @@ package controlador.ed.pila.exception;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class TopeException extends Exception{
     

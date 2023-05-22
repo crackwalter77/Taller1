@@ -6,7 +6,7 @@ package controlador.ed.lista.exception;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class VacioException extends Exception{
 

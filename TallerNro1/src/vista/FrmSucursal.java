@@ -11,7 +11,7 @@ import vista.modeloTabla.ModeloTablaSucursal;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class FrmSucursal extends javax.swing.JDialog {
     

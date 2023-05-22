@@ -11,7 +11,7 @@ import vista.modeloTabla.ModeloTablaVentas;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class FrmVentas extends javax.swing.JDialog {
     

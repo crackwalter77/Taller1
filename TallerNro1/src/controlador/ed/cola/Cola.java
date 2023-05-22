@@ -10,7 +10,7 @@ import controlador.ed.pila.exception.TopeException;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class Cola<E> {
     private ColaI<E> cola;

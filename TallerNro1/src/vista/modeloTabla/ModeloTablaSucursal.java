@@ -10,7 +10,7 @@ import modelo.Sucursal;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class ModeloTablaSucursal extends AbstractTableModel{
     private Sucursal [] datos = new Sucursal[4];

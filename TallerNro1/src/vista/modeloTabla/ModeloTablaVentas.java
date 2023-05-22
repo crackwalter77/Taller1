@@ -10,7 +10,7 @@ import modelo.Venta;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class ModeloTablaVentas extends AbstractTableModel{
     private Venta [] datos = new Venta[12];

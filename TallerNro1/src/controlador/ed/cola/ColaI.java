@@ -11,7 +11,7 @@ import controlador.ed.pila.exception.TopeException;
 
 /**
  *
- * @author andy
+ * @author walter
  */
 public class ColaI<E> extends ListaEnlazada<E>{
     
