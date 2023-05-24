@@ -1,12 +1,1 @@
-{
-    "controlador.ed.lista.ListaEnlazada": {
-        "cabecera": {
-            "info": {
-                "@class": "modelo.Sucursal",
-                "id": 1,
-                "nombre": "Alice"
-            }
-        },
-        "size": 1
-    }
-}
+{"controlador.ed.lista.ListaEnlazada":{"cabecera":{"info":{"@class":"modelo.Sucursal","id":1,"nombre":"Alice"}},"size":1}}

@@ -8,7 +8,6 @@ import java.io.IOException;
 import modelo.EnumMes;
 import modelo.Sucursal;
 import modelo.Venta;
-//import javax.persistence.metamodel.ListAttribute;
 
 /**
  *
