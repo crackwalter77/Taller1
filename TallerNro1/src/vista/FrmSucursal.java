@@ -64,7 +64,7 @@ public class FrmSucursal extends javax.swing.JDialog {
        
        
         if(txtNombre.getText().trim().isEmpty()){
-            JOptionPane.showMessageDialog(null, "Datos Llenos", "ERROR", JOptionPane.ERROR_MESSAGE); 
+            JOptionPane.showMessageDialog(null, "Llene los datos", "ERROR", JOptionPane.ERROR_MESSAGE); 
         }else{
             try{
                 this.control.getSucursal().setNombre(txtNombre.getText());

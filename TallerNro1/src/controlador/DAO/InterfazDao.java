@@ -4,6 +4,7 @@
  */
 package controlador.DAO;
 
+import controlador.ed.lista.ListaEnlazada;
 import java.io.IOException;
 
 /**
@@ -23,7 +24,7 @@ public interface InterfazDao<T>{
      * @param obj Objeto a modificar
      * @param pos posicion del arreglo
      */
-    public void modificar(T obj, Integer pos);
-    public T[] listar();
+    public void modificar(T obj, Integer pos) throws IOException;
+    public ListaEnlazada<T> listar();
     public T obtener(Integer id);
 }

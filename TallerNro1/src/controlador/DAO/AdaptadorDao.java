@@ -5,9 +5,10 @@
 package controlador.DAO;
 
 import com.thoughtworks.xstream.io.StreamException;
+import controlador.ed.lista.ListaEnlazada;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
 
 
 /**
@@ -30,10 +31,16 @@ public class AdaptadorDao <T> implements InterfazDao<T>{
     
     
     @Override
-    public void guardar(T obj) throws IOException   {
+    public void guardar(T obj) throws IOException{
         
+        ListaEnlazada<T> lista = listar();
+        lista.insertar(obj);
+        conexion.getXstream().alias(lista.getClass().getName(), ListaEnlazada.class);
+        conexion.getXstream().toXML(lista, new FileWriter(url));
+        
+        
+        /*
         T[] lista = (T[]) Array.newInstance(clazz, 1);
-        
         try {
             T[] aux = listar();
             lista = (T[]) Array.newInstance(clazz, aux.length + 1);     
@@ -47,24 +54,27 @@ public class AdaptadorDao <T> implements InterfazDao<T>{
             System.out.println("no");
             lista[0] = obj;
         }
-
         conexion.getXstream().alias(clazz.getSimpleName().toLowerCase(), clazz);
+        conexion.getXstream().toXML(lista, new FileWriter(url));*/
+    }
+
+    @Override
+    public void modificar(T obj, Integer pos) throws IOException{
+        ListaEnlazada<T> lista = listar();
+        //lista.update(obj, pos);
+        conexion.getXstream().alias(lista.getClass().getName(), ListaEnlazada.class);
         conexion.getXstream().toXML(lista, new FileWriter(url));
-        
     }
 
     @Override
-    public void modificar(T obj, Integer pos) {
-        
-    }
-
-    @Override
-    public T[] listar() throws StreamException{
-        //TODO: Impplementar con listas aqui esta con arreglos
-        T[] lista = (T[])conexion.getXstream().fromXML(url);
-        
+    public ListaEnlazada<T> listar() {
+        ListaEnlazada<T> lista = new ListaEnlazada<>();
+        try {
+            lista = (ListaEnlazada<T>)conexion.getXstream().fromXML(new File(url));
+        } catch (Exception e) {
+            System.out.println(e);
+        }
         return lista;
-
     }
 
     @Override
